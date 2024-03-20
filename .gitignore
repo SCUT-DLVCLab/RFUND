@@ -1,0 +1,8 @@
+.vscode
+.idea
+__pycache__/
+*.lock
+*.pyc
+
+private_*
+private_*/
