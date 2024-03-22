@@ -28,12 +28,12 @@ Our main modifications are as follows:
 
 ## Usage
 
-This repository only contains the annotations of the RFUND dataset. You can download the images from the following links:
-- [FUNSD](https://guillaumejaume.github.io/FUNSD/)
-- [XFUND](https://github.com/doc-analysis/XFUND/releases/tag/v1.0)
+This repository only contains the [RFUND annotations](https://github.com/SCUT-DLVCLab/RFUND/releases). You can download the images from the original release of FUNSD and XFUND:
+- [FUNSD Images](https://guillaumejaume.github.io/FUNSD/)
+- [XFUND Images](https://github.com/doc-analysis/XFUND/releases/tag/v1.0)
 
 The annotation json files are named as `{language}.{data_split}.json`. Language `en` refers to the FUNSD dataset. Contents in the annotation files are organized as follows:
-```json
+```jsonc
 {
   "documents": [ // list that contains annotations for each sample
     {
@@ -73,8 +73,8 @@ The annotation json files are named as `{language}.{data_split}.json`. Language 
                 ],
                 "line_grouping": [          // list of line grouping relations
                     {
-                        "from_id": 0,       // id of the current line
-                        "to_id": 1,         // id of the next line
+                        "from_id": "0",       // id of the current line
+                        "to_id": "1",         // id of the next line
                     },
                     // ...
                 ]
@@ -87,11 +87,11 @@ The annotation json files are named as `{language}.{data_split}.json`. Language 
 
 
 ## License
-RFUND is derived from FUNSD and XFUND, and its license adheres to the same terms and conditions as the original datasets. Please refer to the original licenses for more details.
+RFUND is derived from FUNSD and XFUND, and its license adheres to the same terms and conditions as the original datasets. Please refer to the original licenses ([FUNSD](https://guillaumejaume.github.io/FUNSD/work/), [XFUND](https://github.com/doc-analysis/XFUND?tab=readme-ov-file#license)) for more details.
 
 
 ## Citation
-If you find this dataset useful, please cite the following paper:
+If you find RFUND useful, please cite the following paper:
 ```
 @article{lin2024peneo,
   title={PEneo: Unifying Line Extraction, Line Grouping, and Entity Linking for End-to-end Document Pair Extraction},
