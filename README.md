@@ -1,5 +1,9 @@
 # RFUND: Relabeling FUNSD and XFUND dataset for Real-world Form Understanding
 
+<a href="https://arxiv.org/abs/2401.03472">
+    <img alt="arxiv-link" src="https://img.shields.io/badge/cs.CL-arXiv%3A2401.03472-B31B1B.svg"></img>
+</a>
+
 
 ## Introduction
 
