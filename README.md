@@ -1,15 +1,18 @@
 # RFUND: Relabeling FUNSD and XFUND dataset for Real-world Form Understanding
 
 <a href="https://arxiv.org/abs/2401.03472">
-    <img alt="arxiv-link" src="https://img.shields.io/badge/cs.CL-arXiv%3A2401.03472-B31B1B.svg"></img>
+    <img alt="arxiv-link" src="https://img.shields.io/badge/arXiv-2401.03472-B31B1B.svg?logo=arXiv"></img>
+</a>
+<a href="https://github.com/ZeningLin/PEneo">
+    <img alt="code-link" src="https://img.shields.io/badge/code-PEneo-black.svg?logo=GitHub"></img>
 </a>
 
 
 ## Introduction
 
-This repository is the official release of RFUND introduced in the paper "PEneo: Unifying Line Extraction, Line Grouping, and Entity Linking for End-to-end Document Pair Extraction" (arXiv:2401.03472).
+This repository is the official release of RFUND introduced in the MM'2024 paper "PEneo: Unifying Line Extraction, Line Grouping, and Entity Linking for End-to-end Document Pair Extraction".
 
-RFUND is a relabeled version of FUNSD ([paper](https://ieeexplore.ieee.org/abstract/document/8892998),[release](https://guillaumejaume.github.io/FUNSD/)) and XFUND ([paper](https://aclanthology.org/2022.findings-acl.253/), [release](https://github.com/doc-analysis/XFUND)) dataset. We observed the following issues in their original annotations:
+RFUND is a relabeled version of FUNSD ([paper](https://ieeexplore.ieee.org/abstract/document/8892998),[dataset-release](https://guillaumejaume.github.io/FUNSD/)) and XFUND ([paper](https://aclanthology.org/2022.findings-acl.253/), [dataset-release](https://github.com/doc-analysis/XFUND)) dataset. We observed the following issues in their original annotations:
 
 1. **Entity (block) level OCR results**. Real-world OCR engines usually produce line-level results, while the annotations in FUNSD and XFUND are at the entity (block) level. Text lines within the same entity are aggregated and serialized in human reading order, simplifying the task scope and failing to reflect the real-world challenges.
 2. **Inconsistent labeling granularity**. In FUNSD, while most contents are annotated at the entity level, multi-line entities with first-line indentation are annotated separately, in which the first line is split out and the rest are aggregated. XFUND exhibits variable granularity in annotations, with some contents labeled at the entity level and others at the line level. Such inconsistent labeling standards can hinder model training.
@@ -95,12 +98,12 @@ RFUND is derived from FUNSD and XFUND, and its license adheres to the same terms
 
 
 ## Citation
-If you find RFUND useful, please cite the following paper:
+If you find RFUND useful, please consider citing our paper:
 ```
-@article{lin2024peneo,
+@inproceedings{lin2024peneo,
   title={PEneo: Unifying Line Extraction, Line Grouping, and Entity Linking for End-to-end Document Pair Extraction},
   author={Lin, Zening and Wang, Jiapeng and Li, Teng and Liao, Wenhui and Huang, Dayi and Xiong, Longfei and Jin, Lianwen},
-  journal={arXiv preprint arXiv:2401.03472},
+  booktitle={Proceedings of the 32th ACM International Conference on Multimedia},
   year={2024}
 }
 ```
