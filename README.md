@@ -104,6 +104,7 @@ If you find RFUND useful, please consider citing our paper:
   title={PEneo: Unifying Line Extraction, Line Grouping, and Entity Linking for End-to-end Document Pair Extraction},
   author={Lin, Zening and Wang, Jiapeng and Li, Teng and Liao, Wenhui and Huang, Dayi and Xiong, Longfei and Jin, Lianwen},
   booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={5171--5180},
   year={2024}
 }
 ```
